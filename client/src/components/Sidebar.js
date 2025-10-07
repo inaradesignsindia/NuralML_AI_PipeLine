@@ -60,7 +60,9 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
                   }`}
                   onClick={() => setSidebarOpen(false)}
                 >
-                  <span className="mr-3 text-base group-hover:scale-110 transition-transform">{item.icon}</span>
+                  <div className="w-6 flex items-center justify-center flex-shrink-0 mr-3">
+                    <span className="text-base group-hover:scale-110 transition-transform">{item.icon}</span>
+                  </div>
                   <span className="font-medium">{item.name}</span>
                 </Link>
               );

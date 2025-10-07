@@ -35,11 +35,11 @@ function AppContent() {
   const { alerts, dismissAlert, getAlertHistory } = useWebSocket();
 
   return (
-    <div className={`min-h-screen ${isDark ? 'bg-gray-900 text-gray-100' : 'bg-gray-50 text-gray-900'}`}>
+    <div className="min-h-screen bg-tv-gradient text-tv-text font-tv">
       <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
       <div className="lg:pl-64">
         <Header setSidebarOpen={setSidebarOpen} />
-        <main className="p-4 lg:p-8">
+        <main className="p-4 lg:p-6">
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/ai-quant" element={<AIQuantAnalysis />} />

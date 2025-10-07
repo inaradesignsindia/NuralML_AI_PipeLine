@@ -24,7 +24,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
           className="fixed inset-0 z-40 lg:hidden"
           onClick={() => setSidebarOpen(false)}
         >
-          <div className="absolute inset-0 bg-gray-600 opacity-75"></div>
+          <div className="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
         </div>
       )}
 
@@ -32,59 +32,62 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
       <div
         className={`fixed inset-y-0 left-0 z-50 w-64 transform ${
           sidebarOpen ? 'translate-x-0' : '-translate-x-full'
-        } transition-transform duration-300 ease-in-out lg:translate-x-0 lg:static lg:inset-0 glass-card border-r border-gray-700`}
+        } transition-transform duration-300 ease-in-out lg:translate-x-0 lg:static lg:inset-0 tv-card border-r border-tv-border`}
       >
         <div className="flex flex-col h-full">
           {/* Logo */}
-          <div className="flex items-center justify-center h-16 px-4 border-b border-gray-700">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold">N</span>
+          <div className="flex items-center justify-center h-16 px-4 border-b border-tv-border">
+            <div className="flex items-center space-x-3">
+              <div className="w-8 h-8 bg-tv-accent rounded-lg flex items-center justify-center shadow-lg">
+                <span className="text-white font-bold text-sm">N</span>
               </div>
-              <span className="text-xl font-bold text-white">NuralML</span>
+              <span className="text-lg font-semibold text-tv-text">NuralML</span>
             </div>
           </div>
 
           {/* Navigation */}
-          <nav className="flex-1 px-4 py-6 space-y-2">
+          <nav className="flex-1 px-3 py-6 space-y-1">
             {navigation.map((item) => {
               const isActive = location.pathname === item.href;
               return (
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`flex items-center px-4 py-3 text-sm font-medium rounded-lg transition-colors ${
+                  className={`flex items-center px-3 py-2.5 text-sm font-medium rounded-md transition-all duration-200 group ${
                     isActive
-                      ? 'bg-blue-600 text-white shadow-lg'
-                      : 'text-gray-300 hover:bg-gray-700 hover:text-white'
+                      ? 'bg-tv-accent/20 text-tv-accent border-r-2 border-tv-accent shadow-sm'
+                      : 'text-tv-text-secondary hover:bg-tv-gray hover:text-tv-text'
                   }`}
                   onClick={() => setSidebarOpen(false)}
                 >
-                  <span className="mr-3 text-lg">{item.icon}</span>
-                  {item.name}
+                  <span className="mr-3 text-base group-hover:scale-110 transition-transform">{item.icon}</span>
+                  <span className="font-medium">{item.name}</span>
                 </Link>
               );
             })}
           </nav>
 
           {/* Theme toggle and user info */}
-          <div className="p-4 border-t border-gray-700">
+          <div className="p-4 border-t border-tv-border space-y-3">
             <button
               onClick={toggleTheme}
-              className="w-full flex items-center justify-center px-4 py-2 text-sm font-medium text-gray-300 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors"
+              className="w-full tv-button tv-card-hover flex items-center justify-center px-4 py-2.5 text-sm font-medium"
             >
-              {isDark ? '☀️ Light Mode' : '🌙 Dark Mode'}
+              <span className="mr-2">{isDark ? '☀️' : '🌙'}</span>
+              {isDark ? 'Light Mode' : 'Dark Mode'}
             </button>
             {isAuthenticated && user && (
-              <div className="mt-4 flex items-center space-x-3">
-                <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
-                  <span className="text-white text-sm font-bold">
-                    {user.name ? user.name.charAt(0).toUpperCase() : 'U'}
-                  </span>
-                </div>
-                <div className="flex-1 min-w-0">
-                  <p className="text-sm font-medium text-white truncate">{user.name || 'User'}</p>
-                  <p className="text-xs text-gray-400 truncate">{user.email || 'Authenticated'}</p>
+              <div className="tv-card p-3 rounded-lg">
+                <div className="flex items-center space-x-3">
+                  <div className="w-9 h-9 bg-tv-accent rounded-full flex items-center justify-center shadow-md">
+                    <span className="text-white text-sm font-bold">
+                      {user.name ? user.name.charAt(0).toUpperCase() : 'U'}
+                    </span>
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <p className="text-sm font-medium text-tv-text truncate">{user.name || 'User'}</p>
+                    <p className="text-xs text-tv-text-secondary truncate">{user.email || 'Authenticated'}</p>
+                  </div>
                 </div>
               </div>
             )}

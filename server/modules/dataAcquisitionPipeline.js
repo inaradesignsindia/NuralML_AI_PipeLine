@@ -1,4 +1,4 @@
-const CoinGeckoClient = require('../apiClients/coinGeckoClient');
+ const CoinGeckoClient = require('../apiClients/coinGeckoClient');
 const DeltaClient = require('../apiClients/deltaClient');
 const VolatilityEngine = require('./volatilityEngine');
 const SentimentAnalyzer = require('./sentimentAnalyzer');

@@ -10,7 +10,7 @@ const sentimentAnalyzer = new SentimentAnalyzer();
 const volatilityEngine = new VolatilityEngine();
 
 // Health check with detailed status
-router.get('/health', async (req, res) => {
+router.get('/', async (req, res) => {
   const health = {
     status: 'OK',
     timestamp: new Date().toISOString(),

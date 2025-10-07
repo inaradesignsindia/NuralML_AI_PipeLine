@@ -231,7 +231,7 @@ describe('Socket Handler', () => {
 
         marketContext.unsubscribe(mockSocket, symbol);
 
-        expect(marketContext.subscribers.get(symbol)).not.toContain('socket123');
+        expect(marketContext.subscribers.has(symbol)).toBe(false);
       });
 
       it('should cleanup subscription when no subscribers left', () => {
@@ -280,7 +280,7 @@ describe('Socket Handler', () => {
 
       unsubscribeCallback({ symbol: 'BTCUSDT' });
 
-      expect(marketContext.subscribers.get('BTCUSDT')).not.toContain('socket123');
+      expect(marketContext.subscribers.has('BTCUSDT')).toBe(false);
     });
 
     it('should handle rate limit exceeded', () => {
@@ -322,7 +322,7 @@ describe('Socket Handler', () => {
 
       disconnectCallback();
 
-      expect(marketContext.subscribers.get('BTCUSDT')).not.toContain('socket123');
+      expect(marketContext.subscribers.has('BTCUSDT')).toBe(false);
     });
   });
 });

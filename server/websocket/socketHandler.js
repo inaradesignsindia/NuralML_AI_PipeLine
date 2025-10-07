@@ -235,9 +235,8 @@ class MarketContext {
   }
 }
 
-const marketContext = new MarketContext();
-
 function handleSocketConnection(io, alertManager) {
+  const marketContext = new MarketContext();
   marketContext.setIO(io);
 
   // Use shared AlertManager

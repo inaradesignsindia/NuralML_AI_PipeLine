@@ -1,0 +1,38 @@
+services:
+  - type: web
+    name: nuralml-backend
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: DATABASE_URL
+        value: sqlite:///app/database.db
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: JWT_SECRET
+        generateValue: true
+      - key: BINANCE_API_KEY
+        sync: false
+      - key: BINANCE_API_SECRET
+        sync: false
+      - key: COHERE_API_KEY
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: NEWS_API_KEY
+        sync: false
+      - key: GITHUB_CLIENT_ID
+        sync: false
+      - key: GITHUB_CLIENT_SECRET
+        sync: false
+      - key: FRONTEND_URL
+        value: https://your-netlify-app.netlify.app
+    healthCheckPath: /health
+    disk:
+      name: sqlite-data
+      mountPath: /app
+      sizeGB: 1

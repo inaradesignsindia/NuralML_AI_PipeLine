@@ -24,7 +24,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "http://localhost:3000", // React app
+    origin: process.env.FRONTEND_URL || "http://localhost:3000", // React app
     methods: ["GET", "POST"]
   },
   // Rate limiting for WebSocket connections
@@ -45,7 +45,7 @@ const alertManager = new AlertManager(io);
 
 // Middleware
 app.use(cors({
-  origin: "http://localhost:3000",
+  origin: process.env.FRONTEND_URL || "http://localhost:3000",
   credentials: true
 }));
 app.use(express.json());

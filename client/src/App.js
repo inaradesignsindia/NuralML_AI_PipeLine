@@ -1,60 +1,24 @@
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { ThemeProvider, useTheme } from './contexts/ThemeContext';
-import { AuthProvider } from './contexts/AuthContext';
-import { SimulationProvider } from './contexts/SimulationContext';
-import Sidebar from './components/Sidebar';
+import React from 'react';
 import Header from './components/Header';
-import NotificationSystem from './components/NotificationSystem';
-import Dashboard from './pages/Dashboard';
-import AIQuantAnalysis from './pages/AIQuantAnalysis';
-import UnifiedTrading from './pages/UnifiedTrading';
-import Backtesting from './pages/Backtesting';
-import Settings from './pages/Settings';
-import AuthCallback from './pages/AuthCallback';
-import useWebSocket from './hooks/useWebSocket';
-import './App.css';
+import Sidebar from './components/Sidebar';
+import Chart from './components/Chart';
+import OrderBook from './components/OrderBook';
+import TradingPanel from './components/TradingPanel';
+import Portfolio from './components/Portfolio';
 
 function App() {
   return (
-    <ThemeProvider>
-      <AuthProvider>
-        <SimulationProvider>
-          <Router>
-            <AppContent />
-          </Router>
-        </SimulationProvider>
-      </AuthProvider>
-    </ThemeProvider>
-  );
-}
-
-function AppContent() {
-  const { isDark } = useTheme();
-  const [sidebarOpen, setSidebarOpen] = useState(false);
-  const { alerts, dismissAlert, getAlertHistory } = useWebSocket();
-
-  return (
-    <div className="min-h-screen bg-tv-gradient text-tv-text font-tv">
-      <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
-      <div className="lg:pl-64">
-        <Header setSidebarOpen={setSidebarOpen} />
-        <main className="p-4 lg:p-6">
-          <Routes>
-            <Route path="/" element={<Dashboard />} />
-            <Route path="/ai-quant" element={<AIQuantAnalysis />} />
-            <Route path="/unified-trading" element={<UnifiedTrading />} />
-            <Route path="/backtesting" element={<Backtesting />} />
-            <Route path="/settings" element={<Settings />} />
-            <Route path="/auth/callback" element={<AuthCallback />} />
-          </Routes>
-        </main>
+    <div className="h-screen bg-gray-900 text-white flex flex-col">
+      <Header />
+      <div className="flex flex-1">
+        <Sidebar />
+        <Chart />
+        <div className="flex flex-col">
+          <OrderBook />
+          <TradingPanel />
+          <Portfolio />
+        </div>
       </div>
-      <NotificationSystem
-        alerts={alerts}
-        onDismiss={dismissAlert}
-        onGetHistory={getAlertHistory}
-      />
     </div>
   );
 }

@@ -8,3 +8,144 @@
 {"level":"\u001b[32minfo\u001b[39m","message":"\u001b[32mData Acquisition & Pre-Processing Pipeline (DAPP) started\u001b[39m","timestamp":"2025-10-07 20:24:07:247"}
 {"coinId":"invalid","days":30,"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mCoinGecko API error in getHistoricalData: Request failed with status code 404\u001b[39m","timestamp":"2025-10-07 20:26:47:2647"}
 {"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mCoinGecko API error in getCoinList: Network error\u001b[39m","timestamp":"2025-10-07 20:26:47:2647"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 1 failed, retrying in 1000ms:\u001b[39m","timestamp":"2025-10-07 22:06:22:622"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 1) after 1000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:06:37:637"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 1 failed, retrying in 1000ms:\u001b[39m","timestamp":"2025-10-07 22:06:47:647"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 1) after 1000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:06:47:647"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 1 failed, retrying in 1000ms:\u001b[39m","timestamp":"2025-10-07 22:06:49:649"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 1) after 1000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:06:49:649"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 1 failed, retrying in 1000ms:\u001b[39m","timestamp":"2025-10-07 22:06:50:650"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 1) after 1000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:06:50:650"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 1 failed, retrying in 1000ms:\u001b[39m","timestamp":"2025-10-07 22:07:02:72"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 1) after 1000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:07:02:72"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 1 failed, retrying in 1000ms:\u001b[39m","timestamp":"2025-10-07 22:07:02:72"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 1) after 1000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:07:02:72"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 1 failed, retrying in 1000ms:\u001b[39m","timestamp":"2025-10-07 22:07:17:717"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 1) after 1000ms: socket hang up\u001b[39m","timestamp":"2025-10-07 22:07:17:717"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 1 failed, retrying in 1000ms:\u001b[39m","timestamp":"2025-10-07 22:07:32:732"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 1) after 1000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:07:32:732"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 2 failed, retrying in 2000ms:\u001b[39m","timestamp":"2025-10-07 22:07:32:732"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 2) after 2000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:07:33:733"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 1 failed, retrying in 1000ms:\u001b[39m","timestamp":"2025-10-07 22:07:49:749"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 1) after 1000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:07:52:752"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 1 failed, retrying in 1000ms:\u001b[39m","timestamp":"2025-10-07 22:07:52:752"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 1) after 1000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:07:52:752"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 2 failed, retrying in 2000ms:\u001b[39m","timestamp":"2025-10-07 22:07:52:752"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 2) after 2000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:07:52:752"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 2 failed, retrying in 2000ms:\u001b[39m","timestamp":"2025-10-07 22:07:53:753"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 2) after 2000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:07:53:753"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 1 failed, retrying in 1000ms:\u001b[39m","timestamp":"2025-10-07 22:07:55:755"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 1) after 1000ms: socket hang up\u001b[39m","timestamp":"2025-10-07 22:07:55:755"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 1 failed, retrying in 1000ms:\u001b[39m","timestamp":"2025-10-07 22:08:12:812"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 1) after 1000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:08:12:812"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 2 failed, retrying in 2000ms:\u001b[39m","timestamp":"2025-10-07 22:08:12:812"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 2) after 2000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:08:12:812"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 2 failed, retrying in 2000ms:\u001b[39m","timestamp":"2025-10-07 22:08:13:813"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 2) after 2000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:08:13:813"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 2 failed, retrying in 2000ms:\u001b[39m","timestamp":"2025-10-07 22:08:14:814"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 2) after 2000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:08:14:814"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 2 failed, retrying in 2000ms:\u001b[39m","timestamp":"2025-10-07 22:08:14:814"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 2) after 2000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:08:15:815"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 2 failed, retrying in 2000ms:\u001b[39m","timestamp":"2025-10-07 22:08:15:815"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 2) after 2000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:08:15:815"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 1 failed, retrying in 1000ms:\u001b[39m","timestamp":"2025-10-07 22:08:15:815"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 1) after 1000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:08:15:815"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 1 failed, retrying in 1000ms:\u001b[39m","timestamp":"2025-10-07 22:08:16:816"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 1) after 1000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:08:16:816"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 3 failed, retrying in 4000ms:\u001b[39m","timestamp":"2025-10-07 22:08:16:816"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 3) after 4000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:08:16:816"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 2 failed, retrying in 2000ms:\u001b[39m","timestamp":"2025-10-07 22:08:36:836"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 2) after 2000ms: socket hang up\u001b[39m","timestamp":"2025-10-07 22:08:36:836"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 1 failed, retrying in 1000ms:\u001b[39m","timestamp":"2025-10-07 22:08:57:857"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 1) after 1000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:08:57:857"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 1 failed, retrying in 1000ms:\u001b[39m","timestamp":"2025-10-07 22:08:58:858"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 1) after 1000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:08:59:859"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 2 failed, retrying in 2000ms:\u001b[39m","timestamp":"2025-10-07 22:08:59:859"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 2) after 2000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:08:59:859"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 3 failed, retrying in 4000ms:\u001b[39m","timestamp":"2025-10-07 22:09:00:90"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 3) after 4000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:09:00:90"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 3 failed, retrying in 4000ms:\u001b[39m","timestamp":"2025-10-07 22:09:00:90"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 3) after 4000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:09:01:91"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 2 failed, retrying in 2000ms:\u001b[39m","timestamp":"2025-10-07 22:09:07:97"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 2) after 2000ms: socket hang up\u001b[39m","timestamp":"2025-10-07 22:09:07:97"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 1 failed, retrying in 1000ms:\u001b[39m","timestamp":"2025-10-07 22:09:07:97"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 1) after 1000ms: socket hang up\u001b[39m","timestamp":"2025-10-07 22:09:07:97"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 2 failed, retrying in 2000ms:\u001b[39m","timestamp":"2025-10-07 22:09:27:927"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 2) after 2000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:09:27:927"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 1 failed, retrying in 1000ms:\u001b[39m","timestamp":"2025-10-07 22:09:34:934"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 1) after 1000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:09:34:934"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 3 failed, retrying in 4000ms:\u001b[39m","timestamp":"2025-10-07 22:09:35:935"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 3) after 4000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:09:35:935"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 1 failed, retrying in 1000ms:\u001b[39m","timestamp":"2025-10-07 22:09:39:939"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 1) after 1000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:09:39:939"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 1 failed, retrying in 1000ms:\u001b[39m","timestamp":"2025-10-07 22:09:39:939"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 1) after 1000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:09:39:939"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 2 failed, retrying in 2000ms:\u001b[39m","timestamp":"2025-10-07 22:09:40:940"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 2) after 2000ms: socket hang up\u001b[39m","timestamp":"2025-10-07 22:09:40:940"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 3 failed, retrying in 4000ms:\u001b[39m","timestamp":"2025-10-07 22:10:56:1056"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 3) after 4000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:10:56:1056"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 3 failed, retrying in 4000ms:\u001b[39m","timestamp":"2025-10-07 22:10:57:1057"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 3) after 4000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:10:58:1058"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 3 failed, retrying in 4000ms:\u001b[39m","timestamp":"2025-10-07 22:10:58:1058"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 3) after 4000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:10:58:1058"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 3 failed, retrying in 4000ms:\u001b[39m","timestamp":"2025-10-07 22:10:58:1058"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 3) after 4000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:10:58:1058"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 2 failed, retrying in 2000ms:\u001b[39m","timestamp":"2025-10-07 22:10:58:1058"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 2) after 2000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:10:59:1059"}
+{"coinId":"bitcoin","days":30,"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mCoinGecko API error in getHistoricalData: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:11:03:113"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mFailed to fetch bitcoin data:\u001b[39m","timestamp":"2025-10-07 22:11:06:116"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 3 failed, retrying in 4000ms:\u001b[39m","timestamp":"2025-10-07 22:11:06:116"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 3) after 4000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:11:06:116"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 3 failed, retrying in 4000ms:\u001b[39m","timestamp":"2025-10-07 22:11:07:117"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 3) after 4000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:11:07:117"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 1 failed, retrying in 1000ms:\u001b[39m","timestamp":"2025-10-07 22:11:07:117"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 1) after 1000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:11:08:118"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 1 failed, retrying in 1000ms:\u001b[39m","timestamp":"2025-10-07 22:11:08:118"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 1) after 1000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:11:08:118"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 2 failed, retrying in 2000ms:\u001b[39m","timestamp":"2025-10-07 22:11:11:1111"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 2) after 2000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:11:11:1111"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 2 failed, retrying in 2000ms:\u001b[39m","timestamp":"2025-10-07 22:11:14:1114"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 2) after 2000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:11:14:1114"}
+{"coinId":"ethereum","days":30,"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mCoinGecko API error in getHistoricalData: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:11:16:1116"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mFailed to fetch ethereum data:\u001b[39m","timestamp":"2025-10-07 22:11:16:1116"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 3 failed, retrying in 4000ms:\u001b[39m","timestamp":"2025-10-07 22:11:50:1150"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 3) after 4000ms: socket hang up\u001b[39m","timestamp":"2025-10-07 22:11:50:1150"}
+{"coinId":"ethereum","days":30,"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mCoinGecko API error in getHistoricalData: socket hang up\u001b[39m","timestamp":"2025-10-07 22:11:51:1151"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mFailed to fetch ethereum data:\u001b[39m","timestamp":"2025-10-07 22:11:51:1151"}
+{"coinId":"bitcoin","days":30,"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mCoinGecko API error in getHistoricalData: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:12:14:1214"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mFailed to fetch bitcoin data:\u001b[39m","timestamp":"2025-10-07 22:12:14:1214"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 2 failed, retrying in 2000ms:\u001b[39m","timestamp":"2025-10-07 22:12:14:1214"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 2) after 2000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:12:14:1214"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 2 failed, retrying in 2000ms:\u001b[39m","timestamp":"2025-10-07 22:12:15:1215"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 2) after 2000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:12:15:1215"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 3 failed, retrying in 4000ms:\u001b[39m","timestamp":"2025-10-07 22:12:15:1215"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 3) after 4000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:12:15:1215"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 1 failed, retrying in 1000ms:\u001b[39m","timestamp":"2025-10-07 22:12:15:1215"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 1) after 1000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:12:15:1215"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 1 failed, retrying in 1000ms:\u001b[39m","timestamp":"2025-10-07 22:12:15:1215"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 1) after 1000ms: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:12:15:1215"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 2 failed, retrying in 2000ms:\u001b[39m","timestamp":"2025-10-07 22:12:16:1216"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 2) after 2000ms: Request failed with status code 429\u001b[39m","timestamp":"2025-10-07 22:12:16:1216"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 2 failed, retrying in 2000ms:\u001b[39m","timestamp":"2025-10-07 22:12:16:1216"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 2) after 2000ms: Request failed with status code 429\u001b[39m","timestamp":"2025-10-07 22:12:16:1216"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 3 failed, retrying in 4000ms:\u001b[39m","timestamp":"2025-10-07 22:12:17:1217"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 3) after 4000ms: Request failed with status code 429\u001b[39m","timestamp":"2025-10-07 22:12:17:1217"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 3 failed, retrying in 4000ms:\u001b[39m","timestamp":"2025-10-07 22:12:17:1217"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 3) after 4000ms: Request failed with status code 429\u001b[39m","timestamp":"2025-10-07 22:12:17:1217"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 3 failed, retrying in 4000ms:\u001b[39m","timestamp":"2025-10-07 22:12:18:1218"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 3) after 4000ms: Request failed with status code 429\u001b[39m","timestamp":"2025-10-07 22:12:18:1218"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mAttempt 3 failed, retrying in 4000ms:\u001b[39m","timestamp":"2025-10-07 22:12:18:1218"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mRetrying CoinGecko getHistoricalData (attempt 3) after 4000ms: Request failed with status code 429\u001b[39m","timestamp":"2025-10-07 22:12:18:1218"}
+{"coinId":"bitcoin","days":30,"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mCoinGecko API error in getHistoricalData: Request failed with status code 429\u001b[39m","timestamp":"2025-10-07 22:12:19:1219"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mFailed to fetch bitcoin data:\u001b[39m","timestamp":"2025-10-07 22:12:19:1219"}
+{"coinId":"ethereum","days":30,"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mCoinGecko API error in getHistoricalData: Request failed with status code 429\u001b[39m","timestamp":"2025-10-07 22:12:21:1221"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mFailed to fetch ethereum data:\u001b[39m","timestamp":"2025-10-07 22:12:21:1221"}
+{"coinId":"bitcoin","days":30,"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mCoinGecko API error in getHistoricalData: Request failed with status code 429\u001b[39m","timestamp":"2025-10-07 22:12:21:1221"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mFailed to fetch bitcoin data:\u001b[39m","timestamp":"2025-10-07 22:12:21:1221"}
+{"coinId":"bitcoin","days":30,"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mCoinGecko API error in getHistoricalData: Request failed with status code 429\u001b[39m","timestamp":"2025-10-07 22:12:22:1222"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mFailed to fetch bitcoin data:\u001b[39m","timestamp":"2025-10-07 22:12:22:1222"}
+{"coinId":"ethereum","days":30,"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mCoinGecko API error in getHistoricalData: Request failed with status code 429\u001b[39m","timestamp":"2025-10-07 22:12:22:1222"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mCircuit breaker opened after 5 failures\u001b[39m","timestamp":"2025-10-07 22:12:22:1222"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mCircuit breaker OPEN after failure, using fallback\u001b[39m","timestamp":"2025-10-07 22:12:22:1222"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mCircuit breaker fallback for CoinGecko ethereum\u001b[39m","timestamp":"2025-10-07 22:12:22:1222"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"\u001b[33mFailed to fetch ethereum data:\u001b[39m","timestamp":"2025-10-07 22:12:22:1222"}

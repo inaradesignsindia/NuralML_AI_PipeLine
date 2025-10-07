@@ -2,3 +2,12 @@
 {"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mCoinGecko API error in getCoinList: Network error\u001b[39m","timestamp":"2025-10-07 19:33:01:331"}
 {"coinId":"invalid","days":30,"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mCoinGecko API error in getHistoricalData: Request failed with status code 404\u001b[39m","timestamp":"2025-10-07 20:26:47:2647"}
 {"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mCoinGecko API error in getCoinList: Network error\u001b[39m","timestamp":"2025-10-07 20:26:47:2647"}
+{"coinId":"bitcoin","days":30,"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mCoinGecko API error in getHistoricalData: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:11:03:113"}
+{"coinId":"ethereum","days":30,"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mCoinGecko API error in getHistoricalData: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:11:16:1116"}
+{"coinId":"ethereum","days":30,"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mCoinGecko API error in getHistoricalData: socket hang up\u001b[39m","timestamp":"2025-10-07 22:11:51:1151"}
+{"coinId":"bitcoin","days":30,"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mCoinGecko API error in getHistoricalData: read ECONNRESET\u001b[39m","timestamp":"2025-10-07 22:12:14:1214"}
+{"coinId":"bitcoin","days":30,"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mCoinGecko API error in getHistoricalData: Request failed with status code 429\u001b[39m","timestamp":"2025-10-07 22:12:19:1219"}
+{"coinId":"ethereum","days":30,"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mCoinGecko API error in getHistoricalData: Request failed with status code 429\u001b[39m","timestamp":"2025-10-07 22:12:21:1221"}
+{"coinId":"bitcoin","days":30,"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mCoinGecko API error in getHistoricalData: Request failed with status code 429\u001b[39m","timestamp":"2025-10-07 22:12:21:1221"}
+{"coinId":"bitcoin","days":30,"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mCoinGecko API error in getHistoricalData: Request failed with status code 429\u001b[39m","timestamp":"2025-10-07 22:12:22:1222"}
+{"coinId":"ethereum","days":30,"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mCoinGecko API error in getHistoricalData: Request failed with status code 429\u001b[39m","timestamp":"2025-10-07 22:12:22:1222"}

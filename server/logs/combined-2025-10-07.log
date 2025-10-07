@@ -1,0 +1,2 @@
+{"coinId":"invalid","days":30,"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mCoinGecko API error in getHistoricalData: Request failed with status code 404\u001b[39m","timestamp":"2025-10-07 19:33:01:331"}
+{"level":"\u001b[31merror\u001b[39m","message":"\u001b[31mCoinGecko API error in getCoinList: Network error\u001b[39m","timestamp":"2025-10-07 19:33:01:331"}

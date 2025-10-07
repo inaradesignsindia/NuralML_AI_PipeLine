@@ -37,7 +37,7 @@ function AppContent() {
   return (
     <div className={`min-h-screen ${isDark ? 'bg-gray-900 text-gray-100' : 'bg-gray-50 text-gray-900'}`}>
       <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
-      <div className="lg:pl-20">
+      <div className="lg:pl-64">
         <Header setSidebarOpen={setSidebarOpen} />
         <main className="p-4 lg:p-8">
           <Routes>

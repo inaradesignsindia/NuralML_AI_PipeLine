@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTheme } from '../contexts/ThemeContext';
+import { useAuth } from '../contexts/AuthContext';
 
 const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
   const { isDark, toggleTheme } = useTheme();
+  const { user, isAuthenticated } = useAuth();
   const location = useLocation();
 
   const navigation = [
@@ -73,15 +75,19 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
             >
               {isDark ? '☀️ Light Mode' : '🌙 Dark Mode'}
             </button>
-            <div className="mt-4 flex items-center space-x-3">
-              <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
-                <span className="text-white text-sm font-bold">JD</span>
+            {isAuthenticated && user && (
+              <div className="mt-4 flex items-center space-x-3">
+                <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+                  <span className="text-white text-sm font-bold">
+                    {user.name ? user.name.charAt(0).toUpperCase() : 'U'}
+                  </span>
+                </div>
+                <div className="flex-1 min-w-0">
+                  <p className="text-sm font-medium text-white truncate">{user.name || 'User'}</p>
+                  <p className="text-xs text-gray-400 truncate">{user.email || 'Authenticated'}</p>
+                </div>
               </div>
-              <div className="flex-1 min-w-0">
-                <p className="text-sm font-medium text-white truncate">John Doe</p>
-                <p className="text-xs text-gray-400 truncate">Pro Trader</p>
-              </div>
-            </div>
+            )}
           </div>
         </div>
       </div>

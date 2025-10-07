@@ -13,6 +13,7 @@ const aiRoutes = require('./routes/aiRoutes');
 const authRoutes = require('./routes/authRoutes');
 const simulationRoutes = require('./routes/simulationRoutes');
 const healthRoutes = require('./routes/healthRoutes');
+const envRoutes = require('./routes/envRoutes');
 const { passport } = require('./passport');
 const handleSocketConnection = require('./websocket/socketHandler');
 const { wsConnectionLimiter } = require('./middleware/rateLimit');
@@ -73,6 +74,7 @@ app.use('/api/exchange', exchangeRoutes);
 app.use('/api/user', userRoutes);
 app.use('/api/ai', aiRoutes);
 app.use('/api/simulation', simulationRoutes);
+app.use('/api/env', envRoutes);
 app.use('/health', healthRoutes);
 
 

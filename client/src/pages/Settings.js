@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useAuth } from '../contexts/AuthContext';
 
 const Settings = () => {
-  const { isAuthenticated, user } = useAuth();
+  const { isAuthenticated } = useAuth();
   const [activeTab, setActiveTab] = useState('api-keys');
   const [apiKeys, setApiKeys] = useState({
     binance: { apiKey: '', secretKey: '', status: 'disconnected' },
@@ -31,6 +31,9 @@ const Settings = () => {
     enableEmailAlerts: false, // For future email implementation
   });
 
+  const [envVars, setEnvVars] = useState({});
+  const [editingEnv, setEditingEnv] = useState(null);
+
   const handleApiKeyChange = (exchange, field, value) => {
     setApiKeys(prev => ({
       ...prev,
@@ -45,6 +48,7 @@ const Settings = () => {
   useEffect(() => {
     if (isAuthenticated) {
       loadApiKeys();
+      loadEnvVars();
     }
   }, [isAuthenticated]);
 
@@ -154,6 +158,28 @@ const Settings = () => {
       setMessage(`Failed to delete ${exchange} API keys`);
     } finally {
       setLoading(false);
+    }
+  };
+
+  const loadEnvVars = async () => {
+    try {
+      const response = await axios.get('http://localhost:3001/api/env');
+      setEnvVars(response.data);
+    } catch (error) {
+      console.error('Failed to load environment variables:', error);
+      setMessage('Failed to load environment variables');
+    }
+  };
+
+  const updateEnvVar = async (key, value) => {
+    try {
+      await axios.put(`http://localhost:3001/api/env/${key}`, { value });
+      setMessage(`Environment variable ${key} updated successfully`);
+      setEditingEnv(null);
+      await loadEnvVars(); // Reload to get updated values
+    } catch (error) {
+      console.error('Failed to update environment variable:', error);
+      setMessage('Failed to update environment variable');
     }
   };
 
@@ -463,6 +489,61 @@ const Settings = () => {
           </div>
         );
 
+      case 'environment':
+        return (
+          <div className="space-y-6">
+            <h3 className="text-2xl font-semibold text-white">Environment Variables</h3>
+            <p className="text-gray-400">View and manage server environment variables</p>
+
+            <div className="glass-card p-6 rounded-xl space-y-4">
+              {Object.entries(envVars).map(([key, value]) => (
+                <div key={key} className="flex items-center justify-between p-4 bg-gray-800 rounded-lg">
+                  <div>
+                    <h4 className="text-white font-medium">{key}</h4>
+                    <p className="text-gray-400 text-sm">{value || 'Not set'}</p>
+                  </div>
+                  {['DAPP_INTERVAL', 'PORT'].includes(key) && (
+                    <button
+                      onClick={() => setEditingEnv(editingEnv === key ? null : key)}
+                      className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded text-sm"
+                    >
+                      {editingEnv === key ? 'Cancel' : 'Edit'}
+                    </button>
+                  )}
+                </div>
+              ))}
+
+              {editingEnv && (
+                <div className="mt-4 p-4 bg-gray-800 rounded-lg">
+                  <h4 className="text-white font-medium mb-2">Edit {editingEnv}</h4>
+                  <div className="flex gap-2">
+                    <input
+                      type="text"
+                      defaultValue={envVars[editingEnv] || ''}
+                      className="flex-1 bg-gray-700 border border-gray-600 rounded px-3 py-2 text-white"
+                      placeholder={`Enter new value for ${editingEnv}`}
+                      onKeyPress={(e) => {
+                        if (e.key === 'Enter') {
+                          updateEnvVar(editingEnv, e.target.value);
+                        }
+                      }}
+                    />
+                    <button
+                      onClick={() => {
+                        const input = document.querySelector(`input[placeholder*="Enter new value for ${editingEnv}"]`);
+                        if (input) updateEnvVar(editingEnv, input.value);
+                      }}
+                      className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded"
+                    >
+                      Save
+                    </button>
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        );
+
       default:
         return null;
     }
@@ -508,6 +589,16 @@ const Settings = () => {
             }`}
           >
             🔔 Notifications
+          </button>
+          <button
+            onClick={() => setActiveTab('environment')}
+            className={`flex-1 py-3 px-4 rounded-lg text-sm font-medium transition-colors ${
+              activeTab === 'environment'
+                ? 'bg-blue-600 text-white'
+                : 'text-gray-300 hover:bg-gray-700'
+            }`}
+          >
+            🌍 Environment
           </button>
         </div>
       </div>
